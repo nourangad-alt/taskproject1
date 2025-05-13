@@ -1,0 +1,671 @@
+/* Home    */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; 
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #2c3e50; 
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.hero {
+    background-image: url(section.jpg);
+    background-size: 100% 100%;
+    
+    background-position: center; 
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero .lead {
+    font-size: 1.4em;
+    color: #eee;
+    margin-bottom: 30px;
+}
+
+.call-to-action a {
+    display: inline-block;
+    padding: 14px 28px;
+    margin: 0 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.button.primary {
+    background-color: #2ecc71; /* لون أخضر حيوي للزر الأساسي */
+    color: white;
+    border-color: #2ecc71;
+}
+
+.button.primary:hover {
+    background-color: #27ae60;
+    border-color: #27ae60;
+}
+
+.button.secondary {
+    background-color: transparent;
+    color: #f39c12; 
+    border: 2px solid #f39c12;
+}
+
+.button.secondary:hover {
+    background-color: rgba(243, 156, 18, 0.1);
+    color: #e67e22;
+    border-color: #e67e22;
+}
+
+
+
+
+.features {
+    padding: 70px 0;
+    background-color: #fff;
+}
+
+.features h2 {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 45px;
+    color: #2c3e50;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item img {
+    max-width: 90px;
+    height: auto;
+    margin-bottom: 20px;
+    color: #3498db; /* لون الأيقونات */
+}
+
+.feature-item h3 {
+    font-size: 1.6em;
+    margin-bottom: 12px;
+    color: #3498db;
+}
+
+.feature-item p {
+    color: #555;
+}
+
+
+footer {
+    background-color: #34495e; 
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-size: 0.95em;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    display: inline;
+    margin-left: 25px;
+}
+
+footer a {
+    color: #eee;
+}
+
+footer a:hover {
+    color: #ddd;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.8em;
+    }
+
+    .hero .lead {
+        font-size: 1.3em;
+    }
+
+    .call-to-action a {
+        margin: 10px 8px;
+        padding: 12px 24px;
+        font-size: 1em;
+    }
+
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer ul {
+        margin-top: 15px;
+    }
+
+    footer li {
+        margin: 0 12px;
+    }
+}
+/* log in و registraition */
+.auth-section {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.auth-section h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.auth-section button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-section button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.auth-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.auth-link a {
+    color: #3498db;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+
+  /* view tasks    */
+
+.view-tasks-page {
+    background-color: #5fa1a9; 
+    color: #f3f7f8; 
+}
+
+.view-tasks-page .container {
+    background-color: #f7f6f3;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto; 
+}
+
+.view-tasks-page header {
+    color: #ecf0f1;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #4a6572;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-tasks-page header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.view-tasks-page .logout-btn {
+    background-color: #1c4136;
+    color: white;
+    border: none;
+    padding: 0.6em 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+ 
+}
+
+.view-tasks-page .logout-btn:hover {
+    background-color: #e74c3c;
+}
+
+.view-tasks-page .actions-bar {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.view-tasks-page .add-task-btn {
+    background-color:#1c4136; 
+    color: white;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+ 
+}
+
+.view-tasks-page .add-task-btn:hover {
+    background-color: #2ecc71;
+}
+
+.view-tasks-page .filter-options label {
+    color: #0f5443;
+    margin-right: 10px;
+}
+
+.view-tasks-page .filter-options select {
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    border: 1px solid #4a6572;
+    background-color: #153732;
+    color: #ecf0f1;
+}
+
+.view-tasks-page .tasks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.view-tasks-page .task-item {
+    background-color: rgba(20, 65, 51, 0.067); 
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.view-tasks-page .task-item h3 {
+    color: #1c4135;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.view-tasks-page .task-item p {
+    color: #173826;
+    margin-bottom: 10px;
+}
+
+.view-tasks-page .task-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #173826;
+    font-size: 0.9em;
+}
+
+.view-tasks-page .status {
+    padding: 0.3em 0.6em;
+    border-radius: 5px;
+    font-size: 0.8em;
+    color: #173;
+}
+
+.view-tasks-page .status.new {
+    background-color: #3498db; 
+}
+
+.view-tasks-page .status.in-progress {
+    background-color: #f39c12; 
+}
+
+.view-tasks-page .status.completed {
+    background-color: #2ecc71; 
+}
+
+.view-tasks-page .actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.view-tasks-page .edit-btn, .view-tasks-page .delete-btn {
+    background-color: transparent;
+    border: 1px solid #ecf0f1;
+    color: #1c4135;
+    padding: 0.4em 0.8em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.view-tasks-page .edit-btn:hover {
+    background-color: #5dade2;
+    color: #2c3e50;
+}
+
+.view-tasks-page .delete-btn:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+
+
+    /* add task     */
+
+
+.add-task-page {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #5fa1a9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-task-page h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.add-task-page form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+}
+
+.add-task-page form div {
+    margin-bottom: 15px;
+}
+
+.add-task-page label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.add-task-page input[type="text"],
+.add-task-page input[type="date"],
+.add-task-page textarea,
+.add-task-page select {
+    width: calc(100% - 12px);
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.add-task-page textarea {
+    resize: vertical;
+}
+
+.add-task-page select {
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+                      linear-gradient(135deg, gray 50%, transparent 50%);
+    background-position: calc(100% - 15px) 50%, calc(100% - 10px) 50%;
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+    padding-right: 25px;
+}
+
+.add-task-page button[type="submit"] {
+    background-color: #142e21; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.add-task-page button[type="submit"]:hover {
+    background-color:  #5cb85c;
+ }
+
+.add-task-page a {
+    display: block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+.add-task-page a:hover {
+    color: #0056b3;
+}
+
+.back {
+    display: inline-block;
+    margin-top: 15px;
+    background-color:rgb(63, 126, 133);;
+
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back:hover {
+    background-color: #51878d;
+}
+/* تنسيق قائمة المهام */
+.task-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+}
+
+/* تنسيق بطاقة المهمة */
+
+
+.task-card :hover{
+    transform: translateY(-10px);
+}
+.task-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.task-card:hover {
+    transform: scale(1.02);
+}
+
+.task-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.task-desc {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 12px;
+    white-space: pre-wrap;
+}
+
+.task-meta {
+    font-size: 12px;
+    color: #777;
+    font-style: italic;
+}
+
+/* تنسيق عنوان المهمة */
+.task-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* تنسيق وصف المهمة */
+.task-desc {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* تنسيق تفاصيل المهمة (تاريخ، أولوية، حالة) */
+.task-meta {
+    font-size: 12px;
+    color: #999;
+    margin-top: 10px;
+}
+
+/* تنسيق للمهمة التجريبية (لإظهارها مع التنسيق المناسب) */
+.task-item {
+    background-color: #eef;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* تنسيق النصوص داخل مهمة تجريبية */
+.task-item h3 {
+    color: #007BFF;
+    font-size: 20px;
+}
+
+.task-item p {
+    color: #333;
+    font-size: 16px;
+}

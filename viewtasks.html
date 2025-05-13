@@ -1,0 +1,72 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="view-tasks-page">
+    <div class="container">
+        <header>
+            <h1>My Tasks</h1>
+            <button class="logout-btn">Logout</button>
+        </header>
+
+        <div class="actions-bar">
+          <a href="add-task.php"> <button  class="add-task-btn"> New Task</button></a> 
+            <div class="filter-options">
+                <label for="filter-status">Filter by Status:</label>
+                <select id="filter-status">
+                    <option value="">All</option>
+                    <option value="new">New</option>
+                    <option value="in-progress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </div>
+        </div>
+$filter = isset($_GET['filter-status']) ? $_GET['filter-status'] : 'all';
+
+
+        <!-- <div class="tasks-list"> 
+            <div class="task-item">
+                <h3>Task Title 1</h3>
+                <p>A brief description of task 1...</p>
+                <div class="task-details">
+                    <span class="due-date">Due: 2025-05-15</span>
+                    <span class="status new">New</span>
+                </div>
+                <div class="actions">
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </div>
+            </div>
+
+            <div class="task-item">
+                <h3>Task Title 2</h3>
+                <p>A brief description of task 2...</p>
+                <div class="task-details">
+                    <span class="due-date">Due: 2025-05-20</span>
+                    <span class="status in-progress">In Progress</span>
+                </div>
+                <div class="actions">
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </div>
+            </div>
+            </div>
+    </div>-->
+<script src="script.js"></script>
+</body>
+</html>
+<?php
+
+
+
+
+
+
+
+
+
+?>
